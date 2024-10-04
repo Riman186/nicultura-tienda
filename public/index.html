@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Nicultura</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Añadimos el script de PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AfE0R84su5xKYh5_i83L9UHR8Ovq1I6HoFeuCaRyoFKYFdMB6shrDBW21EC_IOGiZpXDviutikvkg7hZ&currency=USD"></script>
+</head>
+<body>
+
+    <header>
+        <nav></nav>
+            <ul class="menu">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#contacto">Información</a></li>
+            </ul>
+        </nav>
+        <h1>Nicultura Shop</h1> 
+    </header>
+
+   
+    <!-- Sección de productos -->
+     
+    <h2>Nuestros Productos</h2> 
+    <section id="productos">
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="img/Artboard 1 Mockup (3).jpg" alt="Macho Raton">
+            <h3>Macho Raton</h3>
+            <p class="precio">Precio: C$380.00</p>
+
+            <label for="talla-1">Talla:</label>
+            <select class="talla" id="talla-1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <label>Color:</label>
+            <div class="colores">
+                <button class="color" data-color="Negro" style="background-color: black; color: white;">Negro</button>
+                <button class="color" data-color="Blanco" style="background-color: white; color: black;">Blanco</button>
+            </div>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="img/Artboard 1 Mockup.jpg" alt="Granada Nicaragua">
+            <h3>Granada Nicaragua</h3>
+            <p class="precio">Precio: C$380.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <label>Color:</label>
+            <div class="colores">
+                <button class="color" data-color="Negro" style="background-color: black; color: white;">Negro</button>
+                <button class="color" data-color="Blanco" style="background-color: white; color: black;">Blanco</button>
+            </div>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="img/Artboard 1 Mockup (1).jpg" alt="La Guadalupana">
+            <h3>La Guadalupana</h3>
+            <p class="precio">Precio: C$380.00</p>
+            <label for="talla-3">Talla:</label>
+            <select class="talla" id="talla-3">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <label>Color:</label>
+            <div class="colores">
+                <button class="color" data-color="Negro" style="background-color: black; color: white;">Negro</button>
+                <button class="color" data-color="Blanco" style="background-color: white; color: black;">Blanco</button>
+            </div>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto">
+            <img src="img/Artboard 1 Mockup (2).jpg" alt="Yoltamal Cute">
+            <h3>Yoltamal Cute</h3>
+            <p class="precio">Precio: C$380.00</p>
+            <label for="talla-4">Talla:</label>
+            <select class="talla" id="talla-4">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <label>Color:</label>
+            <div class="colores">
+                <button class="color" data-color="Negro" style="background-color: black; color: white;">Negro</button>
+                <button class="color" data-color="Blanco" style="background-color: white; color: black;">Blanco</button>
+            </div>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+          <!-- Producto 5 -->
+          <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-01 at 10.44.19 AM (1).jpeg" alt="Pantalon de Vestir">
+            <h3>Pantalon de Vestir</h3>
+            <p class="precio">Precio: C$500.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="L">L</option>
+            </select>
+            <label>Color:</label>
+            <div class="colores">
+                <button class="color" data-color="Negro" style="background-color: black; color: white;">Negro</button>
+            </div>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+          <!-- Producto 6 -->
+          <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.09.11 PM.jpeg" alt="Camisa Vaquera">
+            <h3>Camisa Vaquera</h3>
+            <p class="precio">Precio: C$450.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="S">S</option>                
+            </select>       
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+          <!-- Producto 7 -->
+          <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.11.00 PM.jpeg" alt="Cherry Shirt">
+            <h3>Cherry Shirt</h3>
+            <p class="precio">Precio: C$4000.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="L">L</option>
+            </select>
+            
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <!-- Producto 8 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.12.56 PM.jpeg" alt="Blusa a Rayas">
+            <h3>Blusa a Rayas</h3>
+            <p class="precio">Precio: C$400.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="S">S</option>
+            </select>
+            
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <!-- Producto 9 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.18.30 PM.jpeg" alt="Crop Top">
+            <h3>Crop Top</h3>
+            <p class="precio">Precio: C$400.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="XL">XL</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 10 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.27.37 PM (1).jpeg" alt="Blusa con Escote">
+            <h3>Blusa con Escote</h3>
+            <p class="precio">Precio: C$390.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="M">M</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <!-- Producto 11 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.33.07 PM.jpeg" alt="Traje de Baño">
+            <h3>Traje de baño</h3>
+            <p class="precio">Precio: C$390.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="L">L</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 12 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.28.59 PM.jpeg" alt="Zandalias">
+            <h3>Zandalias</h3>
+            <p class="precio">Precio: C$390.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="32">32</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 13 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.40.10 PM.jpeg" alt="Blusa Mangas Largas">
+            <h3>Blusa Mangas Largas</h3>
+            <p class="precio">Precio: C$380.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="M">M</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        
+         <!-- Producto 14 -->
+         <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.40.33 PM.jpeg" alt="Mini Falda">
+            <h3>Mini Falda</h3>
+            <p class="precio">Precio: C$360.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="S">S</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 15 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.40.56 PM.jpeg" alt="Blusa con Bolsa">
+            <h3>Blusa con Bolsa</h3>
+            <p class="precio">Precio: C$350.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="M">M</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+         <!-- Producto 16 -->
+         <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.41.07 PM.jpeg" alt="Mini Blusa">
+            <h3>Mini Blusa</h3>
+            <p class="precio">Precio: C$350.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="M">M</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+
+        <!-- Producto 17 -->
+        <div class="producto">
+            <img src="img/WhatsApp Image 2024-10-03 at 5.41.43 PM.jpeg" alt="Crop">
+            <h3>Crop</h3>
+            <p class="precio">Precio: C$350.00</p>
+            <label for="talla-2">Talla:</label>
+            <select class="talla" id="talla-2">
+                <option value="M">M</option>
+            </select>
+            <button class="ver-detalles">Ver Detalles</button>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+        </div>
+        <!-- Producto 18 -->
+    <div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.42.34 PM.jpeg" alt="Crop">
+    <h3>Crop</h3>
+    <p class="precio">Precio: C$320.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="M">M</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+    </div>
+
+    <!-- Producto 19 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.43.01 PM.jpeg" alt="Crop">
+    <h3>Crop</h3>
+    <p class="precio">Precio: C$300.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="M">M</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+ <!-- Producto 20 -->
+ <div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.43.18 PM.jpeg" alt="Blusa Sin un Hombro">
+    <h3>Blusa Sin un Hombro</h3>
+    <p class="precio">Precio: C$300.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="M">M</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 21 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.43.37 PM.jpeg" alt="Camisa Mangalarga Infantil">
+    <h3>Camisa Mangalarga Infantil</h3>
+    <p class="precio">Precio: C$300.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="4 años">4 años</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 22 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.43.55 PM.jpeg" alt="Crop con Mangas">
+    <h3>Crop con Mangas</h3>
+    <p class="precio">Precio: C$300.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="M">M</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 23 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.44.15 PM.jpeg" alt="Camisa Corazones">
+    <h3>Camisa Corazones</h3>
+    <p class="precio">Precio: C$300.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="10 años">10 años</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 24 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.45.00 PM.jpeg" alt="Blusa con mangas tejidas">
+    <h3>Blusa con mangas tejidas</h3>
+    <p class="precio">Precio: C$290.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="S">S</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 25 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.45.19 PM.jpeg" alt="crop con mangas transparentes">
+    <h3>Crop con mangas transparentes</h3>
+    <p class="precio">Precio: C$290.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="L">L</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 26 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.45.56 PM.jpeg" alt="crop con mangas de cadenas">
+    <h3>crop con mangas de cadenas</h3>
+    <p class="precio">Precio: C$290.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="L">L</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 27 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.46.36 PM.jpeg" alt="Blusa Vaquera">
+    <h3>Camisa Corazones</h3>
+    <p class="precio">Precio: C$280.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="L">L</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+ <!-- Producto 28 -->
+ <div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.46.52 PM.jpeg" alt="Crop Cherry">
+    <h3>Crop Cherry</h3>
+    <p class="precio">Precio: C$260.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="S">S</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+ <!-- Producto 29 -->
+ <div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.47.24 PM.jpeg" alt="Crop Mangalarga">
+    <h3>Crop Mangalarga</h3>
+    <p class="precio">Precio: C$250.00</p>
+    <label for="talla-2">Talla:</label>
+    <select class="talla" id="talla-2">
+        <option value="M">M</option>
+    </select>
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+ <!-- Producto 30 -->
+ <div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.48.20 PM.jpeg" alt="Medias con lazo">
+    <h3>Medias con lazo</h3>
+    <p class="precio">Precio: C$90.00</p>
+
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 31 -->
+<div class="producto">
+    <img src="img/WhatsApp Image 2024-10-03 at 5.48.32 PM.jpeg" alt="Medias largas con lazo">
+    <h3>Medias largas con lazo </h3>
+    <p class="precio">Precio: C$80.00</p>
+
+    <button class="ver-detalles">Ver Detalles</button>
+    <button class="agregar-carrito">Agregar al Carrito</button>
+</div>
+
+
+
+    </section>
+   <!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-contenido">
+        <span class="close" id="close">&times;</span>
+        <img id="detalle-imagen" src="" alt="Imagen del producto">
+        <h2 id="detalle-nombre"></h2>
+        <p id="detalle-precio"></p>
+        <p id="detalle-tallas">Tallas: <span id="detalle-tallas-info"></span></p>
+        <p id="detalle-colores">Colores: <span id="detalle-colores-info"></span></p>
+        <p id="detalle-descripcion">Descripción: <span id="detalle-descripcion-info"></span></p>
+    </div>
+</div>
+
+    <!-- Sección del carrito -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="lista-carrito">
+            
+            <!-- Aquí aparecerán los productos agregados al carrito -->
+        </div>
+        <p>Total: C$<span id="total-carrito">0.00</span></p>
+
+        <!-- Aquí va el contenedor para el botón de PayPal -->
+        <div id="paypal-button-container"></div> <!-- Contenedor de PayPal -->
+        <div style="margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+            <p style="font-size: 16px; color: #333; margin-bottom: 10px;">
+                Para diseños personalizados o pagos en efectivo o depósitos, contacta aquí:
+            </p>
+            <a href="https://wa.me/50558016073" target="_blank" style="text-decoration: none;">
+                <button style="padding: 10px 20px; background-color: #25D366; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                    Contactar por WhatsApp
+                </button>
+            </a>
+        </div>
+        
+        <div class="tarifas">
+            <h2>Tarifas de Pago con PayPal</h2>
+            <p>Al realizar una compra en nuestro sitio, tenga en cuenta que PayPal aplica una tarifa de transacción que es la siguiente:</p>
+            <ul>
+                <li>Tarifa estándar: 2.9% + C$0.30 por transacción</li>
+                <li>Para transacciones internacionales: 4.4% + tarifa fija según la moneda</li>
+            </ul>
+            <p>Estas tarifas se aplican al total de su compra y se reflejarán en su recibo de pago.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contáctanos</h3>
+                <p>Gmail: niculturashop@gmail.com</p>
+                <p>Teléfono: +505 5801 6073 - +505 5881 0887</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos en nuestras redes</h3>
+                <a href="https://www.facebook.com/profile.php?id=61566852052120" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/nicultura/" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@nicultura" target="_blank">TikTok</a>
+            </div>
+            <div class="footer-links">
+                <h3>Información</h3>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nicultura. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
